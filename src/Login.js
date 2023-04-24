@@ -1,6 +1,6 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './Header';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 function LoginForm() {
   
   const [email, setEmail] = useState('');
@@ -12,7 +12,7 @@ function LoginForm() {
     {
         navigate('/addproduct');
     }
-},[])
+},[navigate])
 async function LoginForm(){
   let item={password,email}
   console.warn(item);

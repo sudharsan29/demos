@@ -1,13 +1,13 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Header from './Header'
 function Register()
  {
-    const Navigatereg = useNavigate();
+    const navigatereg = useNavigate();
 useEffect(() =>{
     if(localStorage.getItem('user-info'))
     {
-        Navigatereg('/addproduct');
+        navigatereg('/addproduct');
     }
 },[])
 
@@ -32,7 +32,7 @@ console.log(result);
 
     if (result.id) {
         localStorage.setItem("user-info",JSON.stringify(result))
-        Navigatereg('/addproduct');
+        navigate('/addproduct');
     }
   
 }

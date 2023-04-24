@@ -3,10 +3,10 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 function Header() {
   let user=JSON.parse(localStorage.getItem('user-info'))
-  const navigate = useNavigate();
+  const Navigate = useNavigate();
 function logout(){
   localStorage.clear();
-  navigate('/register');
+  Navigate('/register');
   
 }
   return (

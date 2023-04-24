@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'
 function Protected(props) {
     let Cmp=props.cmp
@@ -8,7 +8,7 @@ function Protected(props) {
         {
             navigate('/addproduct');
         }
-    },[])
+    },[navigate])
   return (
     <div>
 <Cmp />
